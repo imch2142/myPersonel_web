@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  
+  <title>My Portfolio</title>
+  
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      background-color: #29003f;
+      color: white;
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .parent {
+      height: 70px;
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      padding: 0 50px;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      background-color: #b7b2b8;
+    }
+    .parent a {
+      color: rgb(52, 122, 215);
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .parent a:hover {
+      text-decoration: underline;
+    }
+    .hero-image img {
+      width: 100%;
+      height: auto;
+      margin-top: 70px;
+    }
+    h2 {
+      text-align: center;
+      padding-top: 30px;
+    }
+    .slider-section {
+      padding: 60px 20px;
+    }
+    .slider-container {
+      display: flex;
+      gap: 20px;
+      overflow-x: auto;
+      scroll-snap-type: x mandatory;
+      padding: 20px;
+      scrollbar-width: none;
+    }
+    .slider-container::-webkit-scrollbar {
+      display: none;
+    }
+    .slider {
+      flex: 0 0 auto;
+      width: 250px;
+      scroll-snap-align: start;
+      background-color: #b7b2b8;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+      text-align: center;
+    }
+    .slider img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+    }
+    .app1 {
+      padding: 10px;
+      color: #001F3F;
+      font-weight: bold;
+    }
+    section {
+      padding: 80px 20px;
+    }
+    footer {
+      background-color: #b7b2b8;
+      color: #001F3F;
+      text-align: center;
+      padding: 20px;
+    }
+    footer a {
+      color: #001F3F;
+      font-weight: bold;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="parent">
+    <a href="#about">About Me</a>
+    <a href="#projects">My Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+
+  <div class="hero-image">
+    <img src="3bc9b900b301139c89d70c9391fad339.jpg" alt="Header Image">
+  </div>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <p style="text-align: center; max-width: 800px; margin: auto;">
+      I am a passionate Computer Science student with a strong interest in mobile application development.
+      I enjoy building real-world projects . My goal is to become a professional
+      mobile developer and contribute to impactful tech solutions.
+    </p>
+  </section>
+
+  <section id="projects" class="slider-section">
+    <h2>My Projects</h2>
+    <div class="slider-container">
+      <div class="slider">
+        <a href="manageAppartment.html" target="_blank"></a>
+        <img src="fe77d8e5320b62e80bba436af9f5a4af.jpg" alt="Project 1">
+        <div class="app1">Apartment Management App</div>
+      </a>
+      </div>
+      <div class="slider">
+        <img src="sport.jpg" alt="Project 2">
+        <div class="app1">Sport App</div>
+      </div>
+      <div class="slider">
+        <img src="guss.jpg" alt="Project 3">
+        <div class="app1">Guss  a Number game</div>
+      </div>
+      <div class="slider">
+        <img src="res.jpg" alt="Project 4">
+        <div class="app1">Sport Management Platform</div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p style="text-align: center;">Email: imch8383@gmail.com</p>
+    <p style="text-align: center;">Linkedin: http://linkedin.com/in/in-mch-94146a320</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Mecheter Ines. All rights reserved.</p>
+   
+  </footer>
+
+</body>
+</html>
